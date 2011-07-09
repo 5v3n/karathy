@@ -1,7 +1,7 @@
 --- 
 title: Karakuri powered Toto blogs
 date: 18/05/2011
-:tags: toto, karakuri
+tags: toto, karakuri
 
 Karakuri powered Toto blogs are enabling you to
 

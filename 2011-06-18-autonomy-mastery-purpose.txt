@@ -1,0 +1,65 @@
+--- 
+title: Autonomy, Mastery, Purpose.
+tags: work, life, rock 'n' roll
+date: 18/06/2011
+slug: autonomy-mastery-purpose
+
+Passion causes a lot of trouble. Ever heard that Oscar Wilde quote: "A man can be happy with any woman as long as he does not have to love her."? Same ist true for your job.
+
+After spending half a decade with what could probably be called a classical career, I worked as Senior Consultant at a Digital Agency shaping the face of enterprise e-commerce systems.
+
+Over the years, the more I progressed, the more my discomfit grew. I really wondered why. There were a lot of people willing to sell their own mums to even enter the companies & clients I worked for. 
+
+My problem: I'm passionate about the things I do. I raise a claim concerning the quality of my work's result & the relationships that evolve during the process of making peoples' ideas happen.
+
+Why was that a problem? Because all around me, people seemed to care more about their incentives & pleasing their superiors. By any means necessary.
+
+A real enlightenment was [Daniel Pink's 'Drive'](http://5v3n.com/2010/07/27/book-micro-reviews/) - where he elaborately pinned down almost all these crazy thoughts that I was pondering over for quite a while back then.
+
+I knew I was not alone. Really reassuring.
+
+After blogging about the subject, I realized there are a lot more people out there who shared my point of view than I thought. That was about a year ago. It took me some time to realize that I couldn't change existing company cultures. Tried that in two companies. The first try: managed to put an "Analysis of Innovation supporting measures" on my incentive goals list. I dreamed about a [Fed-Ex-Day][2] in order to collect some evidence that 10 or 20% time will not cost the company money, but bring in new invaluable ideas. I left the company before finishing that task, since it just didn't work out on the bottom line. I left some quite amazing guys behind and turned towards a new challenge in a seemingly shiny agency.
+
+That's where my second try on bringing some autonomy, mastery & purpose love to a motivation 2.0 company happened. I chose a different technique: I found some guys who all shared a certain mindset. A bright young guy had a brilliant concept in mind & we put up a team make things happen. Autonomous fun, heading towards mastery. I did it, yay!!!
+
+After getting attention from the highest ranks, people from the incentives & ego department started trying to get their pieces of the pie. What happened next was a complete reversal from our lean & self-propelling project back into corporate madness, including free carrots & sticks for everybody. Broke my heart. And I wasn't the only one to leave the company after that experience. It wasn't the one and only reason, but the perfect icing on the cake. The "extra hours are cool"-attitude happening there was the worst part I guess. Never want to hear sentences on a friday night after 8 hours of work like "You may leave early - but that will only add pressure to our project in it's final phase."  
+
+Today, I'm quite happy to have turned my back to all that big business & enterprisy culture. I finally found a place to work where my values are shared, where I do not have to waste my energy in turning the tide. The tide rolls fast & steady into a direction I can agree on already. 
+
+You could call it Lifestyle Business, Motivation 3.0 or any buzzword of your choice. It basically all boils down to this:
+
+>- I don’t want to live to work, but rather, work to live. (kind of an European cliché sentence)
+>- It’s not about the job title.
+>- It’s not about the pay check.
+>- It’s not about how glamourous an industry  is.
+>- What matters is :
+>    - the company culture.
+>    - the passion coming from the leaders.
+>    - the company’s ambitions.
+>    - how the company rewards and respects its employees.
+>    - the autonomy/trust given to the employees.
+>    - the purpose of the company and its potential to disrupt a market/change the world.
+>    - personal growth within the company.
+>
+>-- [Matt Aimonetti][1]
+
+After reading Matt's thoughts on the subject & the fact that he quit his job at a major global player - I'm feeling quite more reassured that I'm on the right track too ;-).
+
+The segregation between my job & my work became marginal. Not only because I'm legally bound to contribute to open source projects by my labor contract. It's more about a workplace culture where you find colleagues to work with and mates to play with equal-handedly. The best way to get in trouble is to work long hours without compensating them with flextime. Which is partly based on the fact  that we only do agile projects with time & material contracts, and partly on the fact that we share a common mindset. Fed-Ex day doesn't seem appropriate any more since there is 20% time. Not totally autonomous time, you still have to check if the project you choose fuels the company - but there's room to let your crazy ideas grow outside your free time. Since I'm really addicted to check out new things, hack software, hardware & the world itself. Which sometimes carries me away time consumingly I have to confess. So that's a great improvement for my social live.
+
+The thing I wonder nonetheless is: why is there a felt majority of people who seem to steer willingly towards the mediocrity that is claimed by enterprise culture? Is it because people are afraid to challenge the status quo or because they totally content with this situation? 
+
+Am I living in a ghetto of hackers & designers that share a certain mindset - and are we part of an elite upper crust that's able to claim such high quality working conditions? Are others not lucky enough to stipulate terms like that?
+
+What's your point of view?
+
+Cheers
+
+Sven Kräuter | 5v3n
+
+
+[1]: http://merbist.com/2011/06/10/sayonara-sony/trackback/ "Matt Aimonetti, 'Sayonara Sony"
+[2]: http://www.fanlan.nl/?p=318 "Rob Fanlan, 'Intrinsic Motivation: Our First Fedex Day…'"
+
+
+

@@ -1,22 +1,62 @@
 <!doctype html>
 <html>
   <head>
-		<% page_title = Karakuri::seo_friendly_title(@path, title, 'yourSitesTitle.com') %>
+		<% page_title = Karakuri::seo_friendly_title(@path, title, '5v3n.com') %>
 		<title><%=  page_title %></title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= page_title %> - feed" href="/index.xml" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	  <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+	  <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print"> 
+	  <link rel="stylesheet" type="text/css" href="/css/custom.css">
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	  <!--[if lt IE 8]>
+			<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+	  <![endif]-->
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
+		<![endif]-->
+		<% if ENV['RACK_ENV'] == 'development' && @config[:disqus] #enable disqus dev mode%>
+		<script>var disqus_developer = 1; // developer mode is on</script>
+		<% end %>
   </head>
   <body>
-    <section>
-      <%= yield %> 
-    </section>
+	<section class="container">
+	  <header class="site">
+			<section class="sitename"><a href="/index" title="home">5v3n.com</a></section>
+			<section class="sitenamesubtitle"><code>hacks, love &amp; rock 'n' roll</code></section>
+		</header>
+		<nav class="container">
+			<nav class="navigate">
+				<ul>
+					<li><a href="/index" title="home">home</a></li>
+					<li><a href="/about" title="about">about</a></li>
+					<li><a href="/archives" title="archives">archives</a></li>
+					<li><a href="/index.xml" title="feed">rss/atom</a></li>
+				</ul>
+			</nav>
+			<nav class="connect">
+				<ul>
+					<li><a href="http://twitter.com/sven_kr" title="twitter">twitter</a></li>
+					<li><a href="http://github.com/5v3n" title="github">github</a></li>
+					<li><a href="http://forrst.me/5v3n" title="forrst">forrst</a></li>
+					<li><a href="http://www.linkedin.com/in/svenkraeuter" title="linkedin">linkedin</a></li>
+					<li><a href="http://www.facebook.com/sven.kraeuter" title="facebook">facebook</a></li>
+					<li><a href="https://www.xing.com/profile/Sven_Kraeuter" title="xing">xing</a></li>
+				</ul>
+			</nav>
+		</nav>
+		<section class="corsage">
+    <%= yield %> 
+		</section>
     <footer>
-      powered by <a href="http://cloudhead.io/toto">toto</a> and <a href="http://github.com/5v3n/karakuri">karakuri</a>
+      <p>
+			powered by <a href="http://cloudhead.io/toto">toto</a> and <a href="http://github.com/5v3n/karakuri">karakuri</a>&nbsp;|&nbsp;<a href="/imprint">Imprint</p>
+			<p>publications in this blog are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a> - if not stated elsewhise.</p>
     </footer>
-		<% if @config[:disqus] %>
-		<%= Karakuri::disqus_comment_count_js(@config[:disqus]) %>
-		<% end %>
+	</section>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+ 	<% if @config[:disqus] %>
+	  <%= Karakuri::disqus_comment_count_js(@config[:disqus]) %>
+	<% end %>
   </body>
 </html>
 
