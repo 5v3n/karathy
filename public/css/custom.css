@@ -1,0 +1,346 @@
+body {
+	background: #fafafa;
+	color: #444;
+	font-size: 20px;
+}
+
+.container {
+	background: #eee;
+  width: 750px;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 25px 0px 20px;
+	-moz-box-shadow: 0 0 50px 8px #333;
+	-webkit-box-shadow: 0 0 50px 8px #333;
+	-o-box-shadow: 0 0 50px 8px #333;
+	box-shadow: 0 0 50px 8px #333;
+}
+
+.corsage {
+	background: #eee;
+  width: 710px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+header.site, footer.site {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 40px;
+	background: black;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #EEE;
+	-moz-box-shadow: 0 0 30px 0px #333;
+	-webkit-box-shadow: 0 0 30px 0px #333;
+	-o-box-shadow: 0 0 30px 0px #333;
+	box-shadow: 0 0 30px 0px #333;
+}
+
+.sitename, nav {
+	font-family: 'BebasNeueRegular', "HelveticaNeue-CondensedBold", "Helvetica Neue Bold Condensed", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
+	font-stretch: condensed;
+	text-align: left;
+	width: 10%;
+	display: inline-block;
+}
+
+.sitename {
+	margin-left: 20px;
+	font-size: 32px;
+	float: left;
+}
+
+.sitename a:hover, footer.site a:hover {
+	border-bottom-style: none;
+	color: #EEE;
+}
+
+.sitename a, footer.site a, nav a {
+	color: #EEE;
+}
+
+footer.site a:hover {
+	color: #F06;
+}
+
+header.site nav {
+	display: inline-block;
+	width: 280px;
+	text-align: right;
+	margin-right: 20px;
+	float: right;
+}
+
+header.site {
+	top: 0px;
+}
+
+footer.site {
+	bottom: 0px;
+	font-size: 15px;
+	text-align: center;
+	font-family: 'BebasNeueRegular', "HelveticaNeue-CondensedBold", "Helvetica Neue Bold Condensed", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
+	text-transform: none;
+}
+
+header {
+	width: 100%;
+}
+
+.about header, header.post h1, .title h1, header.imprint h1, header.about h1, header.archives h1 {
+	/* @font-face, helvetic neue condensed bold or bust! */
+	font-family: 'BebasNeueRegular', "HelveticaNeue-CondensedBold", "Helvetica Neue Bold Condensed", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
+	font-stretch: condensed;
+	font-style: bold;
+	text-align: left;
+	text-transform: uppercase; 
+	color: #444;
+	font-size: 60px;
+}
+
+header.post.subtitle, footer.post{
+	display: inline-block;
+}
+
+
+header.about h1, header.archives h1, header.tagged-posts h1, h1 {
+	text-transform: none;
+	font-size: 60px;
+	text-align: center;
+}
+
+article.post, .about {
+	padding-top: 25px;
+}
+
+article.post p, article.post li {
+	font-size: 26px;
+}
+
+.comment-counter, .tags, .date {
+		vertical-align: top;
+	 	line-height: 43px;
+		width: 32.5%;
+		display: inline-block;
+}
+
+.comment-counter {
+	text-align: center;
+}
+
+.tags {
+	text-align: left;
+}
+
+.date {
+	text-align: right;
+}
+
+.archive-entry {
+	display: inline-block;
+}
+
+.archive-entry.title {
+	float: left;
+	text-align: left;
+	width: 80%;
+}
+.archive-entry.date {
+	float: right;
+	text-align: right;
+	width: 20%;
+}
+.archive-entry.tags {
+	float: right;
+	text-align: right;
+	width: 66%;
+}
+
+.post.date {
+	float: right;
+}
+
+.date {
+	float: right;
+}
+
+.tags {
+	float: left;
+}
+
+article.post p, article.post li, .content , header.post p, body {
+		/* Traditional Garamond-based serif stack */
+		font-family: "CrimsonRoman", "Palatino Linotype", "Palatino", "Palladio", "URW Palladio L", "Book Antiqua", "Baskerville", "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", "Georgia", serif;
+		font-size: 20px;
+		text-align: justify;
+}
+
+.post.content, .about {
+	margin: 0 62px;
+}
+/* emphasize first letter of a post - work in progress
+.post.content p:first-child:first-letter {
+  font-size: 70px;
+  float: left;
+  margin-top: 10px;
+	color: green;
+}
+*/
+.comments {
+	font-size: 20px;
+	color: #888;
+}
+
+.share-buttons{
+	text-align: center;
+}
+
+.archives {
+	margin-top: 25px;
+}
+
+ h1 {
+  font-size: 40px;
+}
+
+a {
+  color: #f06;
+  text-decoration: none;
+}
+
+.archives a, header.post.title a {
+  color: #444;
+  text-decoration: none;
+}
+
+.archives a:hover, header.post.title a:hover, nav a:hover {
+	border-bottom-style: none;
+  color: #f06;
+}
+
+.more {
+	text-align: right;
+	width: 100%;
+}
+
+a:hover {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #f06;
+  color: #444;
+}
+
+hr.thin {
+	height: 1px;
+	border: 0;
+	color: #F06;
+	background-color: #F06;
+	width: 33%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* navigation */
+
+nav.site {
+	background: #eee;
+  width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	padding-top: 20px;
+}
+
+nav.navigate {
+	float: left;
+}
+
+nav.container {
+	width: 710px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+nav ul, .connect ul{
+	margin: 0 auto;
+}
+
+.connect {
+	width: 370px;
+	overflow: hidden;
+	margin: 0 0 1.5em;
+}
+
+.connect a:hover {
+	border-bottom-style: none;
+}
+
+.connect ul{ 
+	width: 210px;
+	padding-left: 0;
+}
+
+.connect ul li{ 
+	width: 38px;
+}
+
+nav ul li, .connect ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+code {
+  font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
+}
+
+.comments {
+  width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about-first-picture{
+	margin-left: 10px;
+	float: right;
+}
+
+.about-2nd-picture{
+	margin-right: 10px; 
+	float: left;
+}
+
+
+/*HTML5 @font-face part */
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on May 19, 2011 04:16:32 PM America/New_York */
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('/css/fonts/BebasNeue-webfont.eot');
+    src: url('/css/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/BebasNeue-webfont.woff') format('woff'),
+         url('/css/fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('/css/fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on May 20, 2011 12:53:32 PM America/New_York */
+
+@font-face {
+    font-family: 'CrimsonRoman';
+    src: url('/css/fonts/Crimson-Roman-webfont.eot');
+    src: url('/css/fonts/Crimson-Roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/Crimson-Roman-webfont.woff') format('woff'),
+         url('/css/fonts/Crimson-Roman-webfont.ttf') format('truetype'),
+         url('/css/fonts/Crimson-Roman-webfont.svg#CrimsonRoman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

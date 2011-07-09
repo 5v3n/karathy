@@ -1,22 +1,50 @@
 <!doctype html>
 <html>
   <head>
-		<% page_title = Karakuri::seo_friendly_title(@path, title, 'yourSitesTitle.com') %>
+		<% page_title = Karakuri::seo_friendly_title(@path, title, 'your blog title') %>
 		<title><%=  page_title %></title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= page_title %> - feed" href="/index.xml" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	  <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+	  <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print"> 
+	  <link rel="stylesheet" type="text/css" href="/css/custom.css">
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	  <!--[if lt IE 8]>
+			<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+	  <![endif]-->
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
+		<![endif]-->
+		<% if ENV['RACK_ENV'] == 'development' && @config[:disqus] #enable disqus dev mode%>
+		<script>var disqus_developer = 1; // developer mode is on</script>
+		<% end %>
   </head>
   <body>
-    <section>
-      <%= yield %> 
-    </section>
-    <footer>
-      powered by <a href="http://cloudhead.io/toto">toto</a> and <a href="http://github.com/5v3n/karakuri">karakuri</a>
-    </footer>
-		<% if @config[:disqus] %>
-		<%= Karakuri::disqus_comment_count_js(@config[:disqus]) %>
-		<% end %>
+  <header class="site">
+		<div class="sitename"><a href="/" title="home">my blog</a></div>
+		<nav>
+			<ul>
+				<li><a href="/#archives" title="archives">archives</a></li>
+				<li><a href="/index.xml" title="feed">rss/atom</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="corsage">
+    <%= yield %> 
+		</div>
+	</div>
+  <footer class="site">
+    powered by <a href="http://github.com/5v3n/karakuri">karakuri</a>&nbsp;on&nbsp;<a href="http://cloudhead.io/toto">toto</a>.<br/>
+    licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> if not stated elsewhise.
+  </footer>
+	<script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+	<%= Karakuri::disqus_comment_count_js(@config[:disqus]) if @config[:disqus] %>
   </body>
 </html>
 
