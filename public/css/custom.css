@@ -175,7 +175,7 @@ article.post p, article.post li, section.content , header.post p, body {
 		text-align: justify;
 }
 
-section.post.content {
+section.post.content, section.about {
 	margin: 0 62px;
 }
 /* emphasize first letter of a post - work in progress
