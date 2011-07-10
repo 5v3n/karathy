@@ -19,17 +19,17 @@
 		<% end %>
   </head>
   <body>
+  <header class="site">
+		<section class="sitename"><a href="/index" title="home">5v3n.com</a></section>
+		<section class="sitenamesubtitle"><code>hacks, love &amp; rock 'n' roll.</code></section>
+	</header>
 	<section class="container">
-	  <header class="site">
-			<section class="sitename"><a href="/index" title="home">5v3n.com</a></section>
-			<section class="sitenamesubtitle"><code>hacks, love &amp; rock 'n' roll</code></section>
-		</header>
-		<nav class="container">
+		<nav class="site">
 			<nav class="navigate">
 				<ul>
 					<li><a href="/index" title="home">home</a></li>
 					<li><a href="/about" title="about">about</a></li>
-					<li><a href="/archives" title="archives">archives</a></li>
+					<li><a href="/#archives" title="archives">archives</a></li>
 					<li><a href="/index.xml" title="feed">rss/atom</a></li>
 				</ul>
 			</nav>
@@ -47,16 +47,13 @@
 		<section class="corsage">
     <%= yield %> 
 		</section>
-    <footer>
-      <p>
-			powered by <a href="http://cloudhead.io/toto">toto</a> and <a href="http://github.com/5v3n/karakuri">karakuri</a>&nbsp;|&nbsp;<a href="/imprint">Imprint</p>
-			<p>publications in this blog are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a> - if not stated elsewhise.</p>
-    </footer>
 	</section>
+  <footer class="site">
+    using&nbsp;<a href="http://github.com/5v3n/karakuri">karakuri</a>&nbsp;on&nbsp;<a href="http://cloudhead.io/toto">toto</a>.<br/>
+    licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">creative commons attribution-sharealike 3.0 unported</a> if not stated elsewhise.&nbsp;<a href="/imprint">imprint &amp; legalese.</a>
+  </footer>
 	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
- 	<% if @config[:disqus] %>
-	  <%= Karakuri::disqus_comment_count_js(@config[:disqus]) %>
-	<% end %>
+	<%= Karakuri::disqus_comment_count_js(@config[:disqus]) if @config[:disqus] %>
   </body>
 </html>
 

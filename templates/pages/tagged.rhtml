@@ -1,13 +1,15 @@
 <% desired_tag = Karakuri::desired_tag(env["QUERY_STRING"]) %>
-<section class="tagged-posts">
-	<header class="tagged-posts">
-		<h1>tagged with '<%= desired_tag %>': </h1>
+<section class="archives">
+	<header class="archives">
 	</header>
 	<section class="archive-entries">
-	    <% Karakuri::desired_articles(@articles, desired_tag).each do |article| %>
-	        <h1><a href="<%= article.path %>" title="<%= article.title %>"><%= article.title %></a></h1>
-					<span class="date"><%= article.date %></span>
+	  <% archives = Karakuri::desired_articles(@articles, desired_tag)%>
+	  <% if archives.length > 0 %>
+	    <% for entry in Karakuri::desired_articles(@articles, desired_tag) %>
+	        <section class="archive-entry title"><h1><a href="<%= entry.path %>" title="<%= entry.title %>"><%= entry.title %></a></h1></section>
+					<section class="archive-entry date"><%= entry.date %></section>
 					<hr class="thin"/>
 	    <% end %>
+	  <% end %>
 	</section>
 </section>

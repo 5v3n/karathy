@@ -6,16 +6,16 @@
 			</header>
 			<hr class="thin">
 			<header class="post subtitle">
-				<section class="tags"><%= Karakuri::tag_link_list(article[:tags])  %></section>
+			  <section class="tags"><%= Karakuri::tag_link_list(article[:tags])  %></section>
 				<% if @config[:disqus] %>
-				<section class="comment-counter"><a href="<%= article.path %>#disqus_thread">&nbsp;</a></section>
+				<section class="comment-counter"><a href="<%= article.path %>#disqus_thread">comments</a></section>
 				<% end %>
 				<section class="date"><%= article.date %></section>
       </header>
-      <section class="content">
+      <section class="content post">
         <%= article.summary %>
       </section>
-      <div class="more"><a href="<%= article.path %>">read on &raquo;</a></div>
+      <section class="more"><a href="<%= article.path %>">read on &raquo;</a></section>
     </article>
   <% end %>
 </section>

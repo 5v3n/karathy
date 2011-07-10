@@ -7,10 +7,6 @@
 	  <section class="post content">
 	    <%= body %>
 	  </section>
-		<header class="post subtitle">
-			<section class="post tags">tagged <%= Karakuri::tag_link_list(article[:tags])  %></section>
-			<section class="post date">published <%= date %></section>
-	  </header>
     <section class="share-buttons">
       <a href="http://twitter.com/share?url=<%= permalink %>" class="twitter-share-button" data-count="horizontal" data-counturl="<%=permalink%>" data-via="sven_kr">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <g:plusone size="medium" count="true" href="<%= permalink %>"></g:plusone>
