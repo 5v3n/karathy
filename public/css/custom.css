@@ -258,12 +258,6 @@ nav.navigate {
 	float: left;
 }
 
-.connect {
-	width: 100%;
-	overflow: hidden;
-	margin: 0 0 1.5em;
-}
-
 nav.container {
 	width: 710px;
   white-space: nowrap;
@@ -274,15 +268,23 @@ nav ul, .connect ul{
 	margin: 0 auto;
 }
 
+.connect {
+	width: 370px;
+	overflow: hidden;
+	margin: 0 0 1.5em;
+}
+
+.connect a:hover {
+	border-bottom-style: none;
+}
+
 .connect ul{ 
-	width: 400px;
-	padding: 10px 0;
+	width: 210px;
+	padding-left: 0;
 }
 
 .connect ul li{ 
-	width: 80px;
-	text-align: center;
-	float:left;
+	width: 38px;
 }
 
 nav ul li, .connect ul li {
