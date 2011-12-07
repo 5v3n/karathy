@@ -1,23 +1,23 @@
-<section class="post">
+<div class="post">
 	<article class="post">
 	  <header class="post title">
 	    <h1><%= title %></h1>
 		  <hr class="thin"/>
 		</header>
-	  <section class="post content">
+	  <div class="post content">
 	    <%= body %>
-	  </section>
-    <section class="share-buttons">
+	  </div>
+    <div class="share-buttons">
       <a href="http://twitter.com/share?url=<%= permalink %>" class="twitter-share-button" data-count="horizontal" data-counturl="<%=permalink%>" data-via="sven_kr">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-      <g:plusone size="medium" count="true" href="<%= permalink %>"></g:plusone>
-    </section>
-	  <section class="comments">
+      <div class="g-plusone" data-size="medium" data-href="<%= permalink %>"></div>
+    </div>
+	  <div class="comments">
 	    <% if @config[:disqus] %>
 	      <div id="disqus_thread"></div>
 	      <script type="text/javascript" src="http://disqus.com/forums/<%= @config[:disqus] %>/embed.js"> </script>
 	      <noscript><a href="http://<%= @config[:disqus] %>.disqus.com/?url=ref">View the discussion thread.</a></noscript>
 	    <% end %>
-	  </section>
+	  </div>
 	</article>
-</section>
+</div>
 

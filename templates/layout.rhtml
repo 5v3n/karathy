@@ -20,39 +20,31 @@
   </head>
   <body>
   <header class="site">
-		<section class="sitename"><a href="/index" title="home">5v3n.com</a></section>
-		<section class="sitenamesubtitle"><code>hacks, love &amp; rock 'n' roll.</code></section>
-	</header>
-	<section class="container">
-		<nav class="site">
-			<nav class="navigate">
-				<ul>
-					<li><a href="/index" title="home">home</a></li>
-					<li><a href="/about" title="about">about</a></li>
-					<li><a href="/#archives" title="archives">archives</a></li>
-					<li><a href="/index.xml" title="feed">rss/atom</a></li>
-				</ul>
-			</nav>
-			<nav class="connect">
-				<ul>
-					<li><a href="http://twitter.com/sven_kr" title="twitter">twitter</a></li>
-					<li><a href="http://github.com/5v3n" title="github">github</a></li>
-					<li><a href="http://forrst.me/5v3n" title="forrst">forrst</a></li>
-					<li><a href="http://www.linkedin.com/in/svenkraeuter" title="linkedin">linkedin</a></li>
-					<li><a href="http://www.facebook.com/sven.kraeuter" title="facebook">facebook</a></li>
-					<li><a href="https://www.xing.com/profile/Sven_Kraeuter" title="xing">xing</a></li>
-				</ul>
-			</nav>
+		<div class="sitename"><a href="/" title="home">5v3n.com</a></div>
+		<nav>
+			<ul>
+				<li><a href="/about" title="about">about</a></li>
+				<li><a href="/#archives" title="archives">archives</a></li>
+				<li><a href="/index.xml" title="feed">rss/atom</a></li>
+			</ul>
 		</nav>
-		<section class="corsage">
+	</header>
+	<div class="container">
+		<div class="corsage">
     <%= yield %> 
-		</section>
-	</section>
+		</div>
+	</div>
   <footer class="site">
-    using&nbsp;<a href="http://github.com/5v3n/karakuri">karakuri</a>&nbsp;on&nbsp;<a href="http://cloudhead.io/toto">toto</a>.<br/>
-    licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">creative commons attribution-sharealike 3.0 unported</a> if not stated elsewhise.&nbsp;<a href="/imprint">imprint &amp; legalese.</a>
+    powered by <a href="http://github.com/5v3n/karakuri">karakuri</a>&nbsp;on&nbsp;<a href="http://cloudhead.io/toto">toto</a>.<br/>
+    licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> if not stated elsewhise.&nbsp;<a href="/imprint">imprint &amp; legalese.</a>
   </footer>
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	<script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
 	<%= Karakuri::disqus_comment_count_js(@config[:disqus]) if @config[:disqus] %>
   </body>
 </html>

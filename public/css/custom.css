@@ -18,7 +18,7 @@ body {
 	box-shadow: 0 0 50px 8px #333;
 }
 
-section.corsage {
+.corsage {
 	background: #eee;
   width: 710px;
 	margin-left: 20px;
@@ -32,42 +32,45 @@ header.site, footer.site {
 	height: 40px;
 	background: black;
 	background-color: rgba(0, 0, 0, 0.7);
-	color: white;
+	color: #EEE;
 	-moz-box-shadow: 0 0 30px 0px #333;
 	-webkit-box-shadow: 0 0 30px 0px #333;
 	-o-box-shadow: 0 0 30px 0px #333;
 	box-shadow: 0 0 30px 0px #333;
 }
 
-section.sitename {
+.sitename, nav {
 	font-family: 'BebasNeueRegular', "HelveticaNeue-CondensedBold", "Helvetica Neue Bold Condensed", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
 	font-stretch: condensed;
 	text-align: left;
 	width: 10%;
 	display: inline-block;
+}
+
+.sitename {
 	margin-left: 20px;
 	font-size: 32px;
 	float: left;
 }
 
-section.sitename a:hover, footer.site a:hover {
+.sitename a:hover, footer.site a:hover {
 	border-bottom-style: none;
+	color: #EEE;
 }
 
-section.sitename a, footer.site a {
-	color: white;
+.sitename a, footer.site a, nav a {
+	color: #EEE;
 }
 
 footer.site a:hover {
 	color: #F06;
 }
 
-section.sitenamesubtitle {
+header.site nav {
 	display: inline-block;
-	width: 79%;
+	width: 280px;
 	text-align: right;
 	margin-right: 20px;
-	font-size: 15px;
 	float: right;
 }
 
@@ -87,7 +90,7 @@ header {
 	width: 100%;
 }
 
-header.post h1, section.title h1, header.imprint h1, header.about h1, header.archives h1 {
+.about header, header.post h1, .title h1, header.imprint h1, header.about h1, header.archives h1 {
 	/* @font-face, helvetic neue condensed bold or bust! */
 	font-family: 'BebasNeueRegular', "HelveticaNeue-CondensedBold", "Helvetica Neue Bold Condensed", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
 	font-stretch: condensed;
@@ -103,14 +106,14 @@ header.post.subtitle, footer.post{
 }
 
 
-header.archives h1, header.tagged-posts h1, h1 {
+header.about h1, header.archives h1, header.tagged-posts h1, h1 {
 	text-transform: none;
 	font-size: 60px;
 	text-align: center;
 }
 
-article.post {
-	margin-top: 25px;
+article.post, .about {
+	padding-top: 25px;
 }
 
 article.post p, article.post li {
@@ -136,70 +139,70 @@ article.post p, article.post li {
 	text-align: right;
 }
 
-section.archive-entry {
+.archive-entry {
 	display: inline-block;
 }
 
-section.archive-entry.title {
+.archive-entry.title {
 	float: left;
 	text-align: left;
 	width: 80%;
 }
-section.archive-entry.date {
+.archive-entry.date {
 	float: right;
 	text-align: right;
 	width: 20%;
 }
-section.archive-entry.tags {
+.archive-entry.tags {
 	float: right;
 	text-align: right;
 	width: 66%;
 }
 
-section.post.date {
+.post.date {
 	float: right;
 }
 
-section.date {
+.date {
 	float: right;
 }
 
-section.tags {
+.tags {
 	float: left;
 }
 
-article.post p, article.post li, section.content , header.post p, body {
+article.post p, article.post li, .content , header.post p, body {
 		/* Traditional Garamond-based serif stack */
 		font-family: "CrimsonRoman", "Palatino Linotype", "Palatino", "Palladio", "URW Palladio L", "Book Antiqua", "Baskerville", "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", "Georgia", serif;
 		font-size: 20px;
 		text-align: justify;
 }
 
-section.post.content, section.about {
+.post.content, .about {
 	margin: 0 62px;
 }
 /* emphasize first letter of a post - work in progress
-section.post.content p:first-child:first-letter {
+.post.content p:first-child:first-letter {
   font-size: 70px;
   float: left;
   margin-top: 10px;
 	color: green;
 }
 */
-section.comments {
+.comments {
 	font-size: 20px;
 	color: #888;
 }
 
-section.share-buttons{
+.share-buttons{
 	text-align: center;
 }
 
-section.archives {
+.archives {
 	margin-top: 25px;
 }
 
-section h1 {
+ h1 {
   font-size: 40px;
 }
 
@@ -208,17 +211,17 @@ a {
   text-decoration: none;
 }
 
-nav a, section.archives a, header.post.title a {
+.archives a, header.post.title a {
   color: #444;
   text-decoration: none;
 }
 
-section.archives a:hover, header.post.title a:hover {
+.archives a:hover, header.post.title a:hover, nav a:hover {
 	border-bottom-style: none;
   color: #f06;
 }
 
-section.more {
+.more {
 	text-align: right;
 	width: 100%;
 }
@@ -255,8 +258,10 @@ nav.navigate {
 	float: left;
 }
 
-nav.connect {
-	float: right;
+.connect {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 1.5em;
 }
 
 nav.container {
@@ -265,12 +270,22 @@ nav.container {
   display: inline-block;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
+nav ul, .connect ul{
+	margin: 0 auto;
 }
 
-nav ul li {
+.connect ul{ 
+	width: 400px;
+	padding: 10px 0;
+}
+
+.connect ul li{ 
+	width: 80px;
+	text-align: center;
+	float:left;
+}
+
+nav ul li, .connect ul li {
   list-style-type: none;
   display: inline-block;
   padding: 0.2em 0;
@@ -280,18 +295,18 @@ code {
   font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
 }
 
-section.comments {
+.comments {
   width: 75%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-section.about-first-picture{
+.about-first-picture{
 	margin-left: 10px;
 	float: right;
 }
 
-section.about-2nd-picture{
+.about-2nd-picture{
 	margin-right: 10px; 
 	float: left;
 }

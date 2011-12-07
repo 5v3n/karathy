@@ -1,4 +1,4 @@
-<section class="articles">
+<div class="articles">
   <% for article in articles[0...3] %>
     <article class="post">
       <header class="post title">
@@ -6,22 +6,22 @@
 			</header>
 			<hr class="thin">
 			<header class="post subtitle">
-			  <section class="tags"><%= Karakuri::tag_link_list(article[:tags])  %></section>
+			  <div class="tags"><%= Karakuri::tag_link_list(article[:tags])  %></div>
 				<% if @config[:disqus] %>
-				<section class="comment-counter"><a href="<%= article.path %>#disqus_thread">comments</a></section>
+				<div class="comment-counter"><a href="<%= article.path %>#disqus_thread">comments</a></div>
 				<% end %>
-				<section class="date"><%= article.date %></section>
+				<div class="date"><%= article.date %></div>
       </header>
-      <section class="content post">
+      <div class="content post">
         <%= article.summary %>
-      </section>
-      <section class="more"><a href="<%= article.path %>">read on &raquo;</a></section>
+      </div>
+      <div class="more"><a href="<%= article.path %>">read on &raquo;</a></div>
     </article>
   <% end %>
-</section>
+</div>
 <% if archives.length > 3%>
-<section id="archives">
+<div id="archives">
   <%= archives[3..-1] %>
-</section>
+</div>
 <% end %>
 
