@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-		<% page_title = Karakuri::seo_friendly_title(@path, title, '5v3n.com') %>
+		<% page_title = Karakuri::seo_friendly_title(@path, title, 'your blog title') %>
 		<title><%=  page_title %></title>
     <link rel="alternate" type="application/atom+xml" title="<%= page_title %> - feed" href="/index.xml" />
 	  <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
@@ -20,10 +20,9 @@
   </head>
   <body>
   <header class="site">
-		<div class="sitename"><a href="/" title="home">5v3n.com</a></div>
+		<div class="sitename"><a href="/" title="home">my blog</a></div>
 		<nav>
 			<ul>
-				<li><a href="/about" title="about">about</a></li>
 				<li><a href="/#archives" title="archives">archives</a></li>
 				<li><a href="/index.xml" title="feed">rss/atom</a></li>
 			</ul>
@@ -36,7 +35,7 @@
 	</div>
   <footer class="site">
     powered by <a href="http://github.com/5v3n/karakuri">karakuri</a>&nbsp;on&nbsp;<a href="http://cloudhead.io/toto">toto</a>.<br/>
-    licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> if not stated elsewhise.&nbsp;<a href="/imprint">imprint &amp; legalese.</a>
+    licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> if not stated elsewhise.
   </footer>
 	<script type="text/javascript">
     (function() {
