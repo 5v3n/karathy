@@ -9,7 +9,7 @@ Sprinkled some [karakuri](http://github.com/5v3n/karakuri) magic atop of dorothy
 - use seo friendly page titles
 - use the disqus comment counter
 
-Using [blueprintcss](http://blueprintcss.org) plus HTML5 structural elements, we're ready for cross browser plus next gen HTML action. 
+Using [blueprintcss](http://blueprintcss.org) we're ready for cross some browser action. 
 
 Please be aware that you need to enter your disqus id in the `config.ru` in order to make the comments & comment counter work. And mind to use your bit.ly api credentials in the corresponding line in `templates/pages/articles` to automagically shorten your URLs for social sharing purpose.
 
