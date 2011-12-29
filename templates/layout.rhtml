@@ -15,7 +15,7 @@
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
 		<![endif]-->
 		<% if ENV['RACK_ENV'] == 'development' && @config[:disqus] #enable disqus dev mode%>
-		<script>var disqus_developer = 1; // developer mode is on</script>
+		<script>var disqus_developer = 1;</script>
 		<% end %>
   </head>
   <body>
@@ -23,6 +23,8 @@
 		<div class="sitename"><a href="/" title="home">my blog</a></div>
 		<nav>
 			<ul>
+			  <li><a href="/" title="home">home</a></li>
+				<li><a href="/about" title="about">about</a></li>
 				<li><a href="/#archives" title="archives">archives</a></li>
 				<li><a href="/index.xml" title="feed">rss/atom</a></li>
 			</ul>

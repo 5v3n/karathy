@@ -123,12 +123,13 @@ article.post p, article.post li {
 .comment-counter, .tags, .date {
 		vertical-align: top;
 	 	line-height: 43px;
-		width: 32.5%;
+		width: 32.3%;
 		display: inline-block;
 }
 
 .comment-counter {
 	text-align: center;
+	width: 35%;
 }
 
 .tags {
@@ -290,7 +291,7 @@ nav ul, .connect ul{
 nav ul li, .connect ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.2em 0;
+  padding: 0.2em 2px;
 }
 
 code {
@@ -311,6 +312,11 @@ code {
 .about-2nd-picture{
 	margin-right: 10px; 
 	float: left;
+}
+
+p img {
+	margin: 5px auto;
+	display: block;
 }
 
 
