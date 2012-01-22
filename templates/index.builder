@@ -1,5 +1,5 @@
 require 'karakuri'
-page_title = Karakuri::seo_friendly_title(@path, title, '5v3n.com')
+page_title = Karakuri::seo_friendly_title(@path, title, "your blog's title")
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
 
